@@ -1,6 +1,6 @@
 ## About 
 
-This repo gives you out of the box set of docker container to start local php-mysql-nginx project on your local machine. Nothing else needed, except docker installed on your mac/windows/linux. 
+This repo gives you out of the box set of docker containers to start local php-mysql-nginx project on your local machine. Nothing else needed, except docker installed on your mac/windows/linux. 
 
 ### Contains
 
@@ -25,6 +25,12 @@ Other useful commands:
 + `docker-compose stop`
 + `docker-compose build --no-cache` when you need to rebuild without cached images (for ex. when php dockerfile was modified)
 + `docker exec -it YOUR_PHP_CONTAINER_NAME bash` to enter bash in your php container, name of wich you can check using `docker-compose ps`
+
+### To access db via sequel pro/workbench/dbver
++ port: `3306`
++ user: `dbuser`
++ password: `secret`
++ database: `website`
 
 ### Contribution
 Welcome :) please use PR's for it.
