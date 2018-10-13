@@ -7,8 +7,9 @@ services:
         ports:
             - 9000:9000
         volumes:
-            - ./public/:/srv/www/api
+            - .:/srv/www/msatbsx_project
             - ./docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+        working_dir: /srv/www/aspire_backend
         environment:
             MYSQL_USER: dbuser
             MYSQL_PASSWORD: secret
@@ -18,8 +19,8 @@ services:
         ports:
             - 80:80
         volumes:
-            - ./public:/srv/www/api
-            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+            - .:/srv/www/msatbsx_project
+            - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
         depends_on:
             - php
  
@@ -30,7 +31,7 @@ services:
         depends_on:
             - php
         environment:
-            MYSQL_ROOT_PASSWORD: toor
+            MYSQL_ROOT_PASSWORD: rootpassword
             MYSQL_DATABASE: website
             MYSQL_USER: dbuser
             MYSQL_PASSWORD: secret
