@@ -19,8 +19,12 @@ This repo gives you out of the box set of docker container to start local php-my
 
 Clone the repo, then run  ` docker-compose up -d`
 and visit http://127.0.0.1 in your browser
+
 Other useful commands:
 + `docker-compose ps` - shows you status of your containers (by nqinx "demon off" doesn't mean is not working)
 + `docker-compose stop`
-+ `docker-compose build --no-cahe` when you need to rebuild without cached images (for ex. when php dockerfile was modified)
++ `docker-compose build --no-cache` when you need to rebuild without cached images (for ex. when php dockerfile was modified)
++ `docker exec -it YOUR_PHP_CONTAINER_NAME bash` to enter bash in your php container, name of wich you can check using `docker-compose ps`
 
+### Contribution
+Welcome :) please use PR's for it.
