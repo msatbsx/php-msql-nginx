@@ -11,7 +11,7 @@ This repo gives you out of the box set of docker containers to start local php-m
   + addtionaly in container: zip, vim, yarn
 + MySQL 5.7
 + NGINX 1.13.8
-  + Confiured to show /public folder on the project
+  + Configured to show /public folder on the project
 
 
 
