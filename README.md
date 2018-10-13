@@ -1,6 +1,6 @@
 ## About 
 
-This repo gives you out of the box set of docker containers to start local php-mysql-nginx project on your local machine. Nothing else needed, except docker installed on your mac/windows/linux. 
+This repo gives you out of the box set of docker containers to run php-mysql-nginx project on your local machine. Nothing else needed, except docker installed on your mac/windows/linux. 
 
 ### Contains
 
