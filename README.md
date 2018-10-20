@@ -8,7 +8,7 @@ This repo gives you out of the box set of docker containers to run php-mysql-ngi
   + gd
   + mbstring
   + pdo_mysql
-  + addtionaly in container: zip, vim, yarn
+  + additionally in container: zip, vim, yarn
 + MySQL 5.7
 + NGINX 1.13.8
   + Configured to show /public folder 
@@ -33,4 +33,4 @@ Other useful commands:
 + database: `website`
 
 ### Contribution
-Welcome :) please use PR's for it.
+Welcome :) please do it by PR.
