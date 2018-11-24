@@ -9,7 +9,7 @@ services:
         volumes:
             - .:/srv/www/msatbsx_project
             - ./docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
-        working_dir: /srv/www/aspire_backend
+        working_dir: /srv/www/msatbsx_project
         environment:
             MYSQL_USER: dbuser
             MYSQL_PASSWORD: secret
