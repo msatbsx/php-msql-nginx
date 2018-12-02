@@ -9,6 +9,7 @@ services:
         volumes:
             - .:/srv/www/msatbsx_project
             - ./docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+            - ./docker/php/.bashrc:/root/.bashrc
         working_dir: /srv/www/msatbsx_project
         environment:
             MYSQL_USER: dbuser
