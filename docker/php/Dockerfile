@@ -1,6 +1,5 @@
 FROM php:7.2-fpm
 
-
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
@@ -9,9 +8,13 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install bcmath \
     && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install mysqli \
     && docker-php-ext-install zip
     # && docker-php-ext-configure --with-fpm-user=www-data \
     # && docker-php-ext-configure --with-fpm-group=www-data
+
+RUN pecl install xdebug-2.6.1 \
+    && docker-php-ext-enable xdebug
 
 RUN apt-get install -y vim \
     unzip \
