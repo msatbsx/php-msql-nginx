@@ -4,9 +4,9 @@ This repo gives you out of the box set of docker containers to run php-mysql-ngi
 
 ### Contains
 
-+ PHP 7.2 with many modules, incl.
-  + gd
++ PHP 7.4 with many modules, incl.
   + mbstring
+  + bcmath
   + pdo_mysql
   + additionally in container: zip, vim, yarn
 + MySQL 5.7
